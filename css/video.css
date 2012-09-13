@@ -35,18 +35,40 @@
 	width:46px;
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#717171), color-stop(100%,#262626));
 	cursor:pointer;
+	position:relative;
 	}
-	.control_play{
+	.control:active{
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#262626), color-stop(100%,#717171));
+		}
+	.control:before{
+		content:' ';
+		width:100%;
+		height:100%;
+		position:absolute;
+		top:0;
+		left:0;
+		background:red;
+		}
+	.control_play:before{
+		background:url(../img/control_playgo.png) no-repeat 50% 4px
+		}
+	.control_pause:before{
+		background:url(../img/control_play.png) no-repeat 50% 3px
+		}
+	.control_play,.control_pause{
 		width:66px;
-		background:url(../img/control_play.png) no-repeat 50% 3px,-webkit-gradient(linear, left top, left bottom, color-stop(0%,#717171), color-stop(100%,#262626));
 		}
 	.control_back{
 		border-radius:4px 0 0 4px;
-		background:url(../img/control_back.png) no-repeat 50% 3px,-webkit-gradient(linear, left top, left bottom, color-stop(0%,#717171), color-stop(100%,#262626));
+		}
+	.control_back:before{
+		background:url(../img/control_back.png) no-repeat 50% 3px;
 		}
 	.control_forw{
 		border-radius:0 4px 4px 0;
-		background:url(../img/control_forw.png) no-repeat 50% 3px,-webkit-gradient(linear, left top, left bottom, color-stop(0%,#717171), color-stop(100%,#262626));
+		}
+	.control_forw:before{
+		background:url(../img/control_forw.png) no-repeat 50% 3px
 		}
 #video{
 	width:720px;

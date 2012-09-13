@@ -111,7 +111,7 @@
 	width:379px;
 	height:71px;
 	background:url(../img/fix.png) no-repeat 0 0;
-	-webkit-transition:all .2s linear;
+	-webkit-transition:all .4s linear;
 	}
 .withoutpanel .subs__fix{
 	left:-245px;

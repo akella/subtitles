@@ -32,30 +32,21 @@
 		font-family:'cpmono',Courier,monospace;
 		padding:3px;
 		position:absolute;
-		border:2px solid #8f8f8f;
-		background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#8f8f8f), color-stop(100%,#4f4f4f));
+		border:2px solid transparent;
+		background:#8f8f8f;
 		}
 	/*color0 */
-	.sub_color0 .sub__phrase{
-		border-color:#ffb611;
-		background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffb611), color-stop(100%,#ff6e00));
-		}
+	.sub_color0 .sub__phrase{background:#ffb611}
 	/*color1 - default*/
-	.sub_color1 .sub__phrase{
-		border-color:#8f8f8f;
-		background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#8f8f8f), color-stop(100%,#4f4f4f));
-		}
+	.sub_color1 .sub__phrase{background:#8f8f8f}
 	/*color2 - default*/
-	.sub_color2 .sub__phrase{
-		border-color:#84c984;
-		background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#84c984), color-stop(100%,#37c037));
-		}
+	.sub_color2 .sub__phrase{background:#84c984}
 	/*more colors to add.....*/
 	
 	
 	/*more colors to add.....*/
 		
-		.sub__phrase:before{
+		.sub__phrase:before,.sub__phrase:after{
 			content:' ';
 			position:absolute;
 			top:0;
@@ -64,7 +55,12 @@
 			height:100%;
 			background:url(../img/dots.png) repeat 0 0;
 			border-radius:4px;
+			z-index:2;
 			}
+			.sub__phrase:after{
+				z-index:1;
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(30%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.2))); /* Chrome,Safari4+ */
+				}
 		.sub_active .sub__phrase:before{
 			display:none;
 			}
@@ -74,10 +70,13 @@
 			font-size:11px;
 			font-style:normal;
 			text-shadow:0 1px 2px #fff;
+			position:relative;
+			z-index:4;
 			}
 		.sub__phrase b{
 			font-weight:normal;
 			position:absolute;
+			z-index:5;
 			bottom:3px;
 			right:3px;
 			color:#fff;
@@ -93,6 +92,7 @@
 			color:rgba(0,0,0,0.4);
 			text-decoration:none;
 			font-family:"Lucida sans",sans-serif;
+			z-index:6;
 			}
 		.sub__phrase:hover u{
 			display:block;
@@ -102,7 +102,7 @@
 			}
 			.sub__phrase:hover:before{
 				display:none;
-			}
+				}
 .subs__fix{
 	position:absolute;
 	top:585px;
@@ -114,7 +114,7 @@
 	width:379px;
 	height:71px;
 	background:url(../img/fix.png) no-repeat 0 0;
-	-webkit-transition:all .4s ease-in-out;
+	-webkit-transition:all .2s linear;
 	}
 .withoutpanel .subs__fix{
 	left:-245px;

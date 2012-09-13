@@ -30,13 +30,13 @@
 	}
 	.panel__close:hover{
 		width:20px;
-	}
+		}
 	.panel__close img{
 		opacity:.5;
-	}
+		}
 	.panel__close:hover img{
 		opacity:1;
-	}
+		}
 .withoutpanel .panel__close{
 	right:-15px;
 	border-radius:0;
@@ -48,7 +48,7 @@
 		}
 	.withoutpanel .panel__close:hover{
 		right:-21px;
-	}
+		}
 	
 .searchbox{
 	padding:0 0 25px 0;
@@ -80,10 +80,10 @@
 	content:'';
 	position:absolute;
 	top:0;left:0;width:100%;height:100%;
-}
+	}
 .but_addsubtitle{
 	padding-left:30px;
-}
+	}
 .but_addsubtitle:before{
 	background:url(../img/addbutton.png) no-repeat 8px 5px;
 	}

@@ -23,7 +23,7 @@
 	background:rgba(0,0,0,0.6);
 	cursor:pointer;
 	z-index:100;
-	-webkit-transition:all .2s ease-in-out ;
+	-webkit-transition:all .4s ease-in-out ;
 	text-align:center;
 	vertical-align:middle;
 	line-height:25px;

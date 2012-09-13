@@ -1,0 +1,200 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Interface</title>
+	<link rel="stylesheet" type="text/css" href="css/master.css" media="all">
+</head>
+<body onclick="this.className='withoutpanel';">
+	<!-- BEGIN TOPLINE -->
+	<div class="panel panel_top">
+		<ul class="globalNav">
+			<li><a href="#">Queue</a></li>
+			<li><a href="#" class="globalNav__active">Video</a></li>
+			<li><a href="#">Audio ingest</a></li>
+			<li><a href="#">Frame match</a></li>
+		</ul>
+	</div>
+	<!-- END TOPLINE -->
+	
+	<!-- BEGIN INTERFACE -->
+	<div class="panel panel_interface">
+		
+		<!-- begin panel_left -->
+		<div class="panel panel_left">
+			<div class="panel__close"><img src="img/arr.png" alt="" /></div>
+			<div class="searchbox">
+				<input type="search" name="whatever" id="whatever" />
+			</div>
+				<!-- BEGIN LANGUAGEs -->
+				<div class="languages">
+					<div class="language">
+						<h3 class="language__title">German <a href="#123">Load all subtitles</a></h3>
+						<ul class="language__subs">
+							<li><a href="#">by Kiddie Rock.vNz.—14234.Qerwr!.zzzz—Sony-ar…</a></li>
+							<li><a href="#">by Kiddie Rock.vNz.—14234.Qerwr!.zzzz—Sony-ar…</a></li>
+							<li><a href="#">by Kiddie Rock.vNz.—14234.Qerwr!.zzzz—Sony-ar…</a></li>
+						</ul>
+					</div>
+			
+					<div class="language">
+						<h3 class="language__title">German <a href="#123">Load all subtitles</a></h3>
+						<ul class="language__subs">
+							<li><a href="#">by Kiddie Rock.vNz.—14234.Qerwr!.zzzz—Sony-ar…</a></li>
+							<li><a href="#">by Kiddie Rock.vNz.—14234.Qerwr!.zzzz—Sony-ar…</a></li>
+							<li><a href="#">by Kiddie Rock.vNz.—14234.Qerwr!.zzzz—Sony-ar…</a></li>
+						</ul>
+					</div>
+				
+					<div class="language">
+						<h3 class="language__title">German <a href="#123">Load all subtitles</a></h3>
+						<ul class="language__subs">
+							<li><a href="#">by Kiddie Rock.vNz.—14234.Qerwr!.zzzz—Sony-ar…</a></li>
+							<li><a href="#">by Kiddie Rock.vNz.—14234.Qerwr!.zzzz—Sony-ar…</a></li>
+							<li><a href="#">by Kiddie Rock.vNz.—14234.Qerwr!.zzzz—Sony-ar…</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- END LANGUAGE -->
+	
+			<br><br>
+			<a href="#" class="but but_addsubtitle">Add Subtitles</a>
+		</div>
+		<!-- END panel_left -->
+		
+		<!-- begin panel_right -->
+		<div class="panel panel_right">
+			<div class="panel panel_video">
+				<div class="video">
+					<div class="video__meta">
+						<dl class="timecode">
+							<dt>standard timecode</dt>
+							<dd>00:15:36.565</dd>
+						</dl>
+						<dl class="timecode">
+							<dt>Tape timecode</dt>
+							<dd>01:13:35:15</dd>
+						</dl>
+						<dl class="timecode timecode_active">
+							<dt>Frame Number</dt>
+							<dd>46321</dd>
+						</dl>
+						<div class="video__controls">
+							<div class="control control_back"></div><div class="control control_play"></div><div class="control control_forw"></div>
+						</div>
+					</div>
+					<video id="video" src="" width="720" height="405" poster="img/video.jpg"></video>
+				</div>
+			</div>
+			<!-- BEGIN NAVIGATION ON VIDEO -->
+			<div class="panel panel_navigation">
+				<!-- BEGIN GLobal timeline -->
+				<div class="globalTimeline">
+					<div class="globalTimeline__track">
+						<div class="globalTimeline__currenttime" style="width:300px;">
+							<div class="globalTimeline__theredthing"></div>
+							<div class="globalTimeline__range" style="left:100px;width:300px"></div>
+						</div>
+					</div>
+					<div class="globalTimeline__filmstrip">
+						<img src="img/filmstrip.jpg" height="28" alt="" />
+					</div>
+					<div class="globalTimeline__zoom">
+						<div class="globalTimeline__zoomicon"></div>
+						<input type="range" min="100" max="200" id="range" />
+					</div>
+				</div>
+				<!-- END global timeline -->
+				<!-- BEGIN local timeline -->
+				<div class="localTimeline">
+					<div class="localTimeline__theredthing"></div>
+					<div class="localTimeline__filmstrip">
+						<img src="img/filmstriplocal.jpg" style="height:80px" alt="" />
+					</div>
+					<div class="localTimeline__audio">
+						<img src="img/audio.jpg" style="height:40px" alt="" />
+					</div>
+					
+				</div>
+				<!-- END local timeline -->
+				<div class="subs__fix">
+					<p>by Kiddie Rock.vNz.—14234.Qerwr!.zzzz
+					—Sony-arevelation—AWESOMELON.helped
+					and the third line of caption.rox</p>
+					<a href="#" class="but but_magic">Magic Shift</a>
+				</div>
+				<div class="subs">
+					<!--BEGIN .sub -->
+					<div class="sub sub_color0 sub_active">
+						<div class="sub__title">
+							dytcg#¢1.vNz…<br>
+							zzzz-Sony.srt
+						</div>
+						<div class="sub__phrase" style="left:300px;width:250px">
+							<i>40870– <br>
+							41006</i>
+							<b>851</b>
+							<u>This is a text for subtitle phrase</u>
+						</div>
+						<div class="sub__phrase" style="left:10px;width:100px;">
+							<i>40870– <br>
+							41006</i>
+							<b>851</b>
+							<u>This is a text for subtitle phrase</u>
+						</div>
+					</div>
+					<!--END .sub -->
+					<!--BEGIN .sub -->
+					<div class="sub sub_color1">
+						<div class="sub__title">
+							dytcg#¢1.vNz…<br>
+							zzzz-Sony.srt
+						</div>
+						<div class="sub__phrase" style="left:300px;width:250px">
+							<i>40870– <br>
+							41006</i>
+							<b>851</b>
+							<u>This is a text for subtitle phrase</u>
+						</div>
+						<div class="sub__phrase" style="left:100px;width:100px;">
+							<i>40870– <br>
+							41006</i>
+							<b>851</b>
+							<u>This is a text for subtitle phrase</u>
+						</div>
+					</div>
+					<!--END .sub -->
+					
+					
+					<!--BEGIN .sub -->
+					<div class="sub sub_color2">
+						<div class="sub__title">
+							dytcg#¢1.vNz…<br>
+							zzzz-Sony.srt
+						</div>
+						<div class="sub__phrase" style="left:300px;width:250px">
+							<i>40870– <br>
+							41006</i>
+							<b>851</b>
+							<u>This is a text for subtitle phrase</u>
+						</div>
+						<div class="sub__phrase" style="left:100px;width:100px;">
+							<i>40870– <br>
+							41006</i>
+							<b>851</b>
+							<u>This is a text for subtitle phrase</u>
+						</div>
+					</div>
+					<!--END .sub -->
+				
+				</div>
+				
+			</div>
+			<!-- END NAVIGATION ON VIDEO -->
+
+		</div>
+		<!-- END panel_right -->
+	</div>
+	<!-- END INTERFACE -->
+</body>
+</html>

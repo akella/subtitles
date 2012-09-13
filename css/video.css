@@ -1,0 +1,55 @@
+/* video
+---------------------------------------- */
+.video{
+	position:relative;
+	text-align:center;
+	width:100%;
+	}
+.video__meta{
+	position:absolute;
+	bottom:15px;
+	left:15px;
+	color:#777;
+	text-align:left;
+	}
+	.video__meta dt{
+		text-transform:uppercase;
+		color:#777;
+		font-size:11px;
+		margin-bottom:3px;
+		}
+		.video__meta dd{
+			font-size:24px;
+			font-family:'cpmono',Courier,monospace;
+			margin-bottom:15px;
+			}
+		.timecode_active dd{
+			color:#ccc;
+		}
+
+.control{
+	height:23px;
+	border:1px solid #000;
+	display:inline-block;
+	margin-left:1px;
+	width:46px;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#717171), color-stop(100%,#262626));
+	cursor:pointer;
+	}
+	.control_play{
+		width:66px;
+		background:url(../img/control_play.png) no-repeat 50% 3px,-webkit-gradient(linear, left top, left bottom, color-stop(0%,#717171), color-stop(100%,#262626));
+		}
+	.control_back{
+		border-radius:4px 0 0 4px;
+		background:url(../img/control_back.png) no-repeat 50% 3px,-webkit-gradient(linear, left top, left bottom, color-stop(0%,#717171), color-stop(100%,#262626));
+		}
+	.control_forw{
+		border-radius:0 4px 4px 0;
+		background:url(../img/control_forw.png) no-repeat 50% 3px,-webkit-gradient(linear, left top, left bottom, color-stop(0%,#717171), color-stop(100%,#262626));
+		}
+#video{
+	width:720px;
+	margin:0 auto;
+	display:block;
+	}

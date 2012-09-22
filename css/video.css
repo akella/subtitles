@@ -11,6 +11,7 @@
 	left:15px;
 	color:#777;
 	text-align:left;
+	z-index:1000
 	}
 	.video__meta dt{
 		text-transform:uppercase;
@@ -33,7 +34,7 @@
 			}
 		.timecode_active dd,.timecode_active dd input{
 			color:#ccc;
-		}
+			}
 
 .control{
 	height:23px;
@@ -83,3 +84,14 @@
 	margin:0 auto;
 	display:block;
 	}
+.videoobject{
+	text-align: center;
+	position: relative;
+	height: 405px;
+	}
+	.videoobject video{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		}

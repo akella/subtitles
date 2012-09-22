@@ -31,6 +31,7 @@
 				font-family:'cpmono',Courier,monospace;
 				outline:none;
 				background: transparent;
+				color: #777;
 			}
 		.timecode_active dd,.timecode_active dd input{
 			color:#ccc;

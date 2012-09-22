@@ -23,7 +23,15 @@
 			font-family:'cpmono',Courier,monospace;
 			margin-bottom:15px;
 			}
-		.timecode_active dd{
+			.video__meta dd input{
+				border: none;
+				padding: 0;
+				font-size: 24px;
+				font-family:'cpmono',Courier,monospace;
+				outline:none;
+				background: transparent;
+			}
+		.timecode_active dd,.timecode_active dd input{
 			color:#ccc;
 		}
 
